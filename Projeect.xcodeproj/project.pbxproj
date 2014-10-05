@@ -19,6 +19,10 @@
 		E833099D19E0DD280035E6BA /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = E833099C19E0DD280035E6BA /* Session.m */; };
 		E83309A019E0DD280035E6BA /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = E833099F19E0DD280035E6BA /* Project.m */; };
 		E8A92E7E19E107A100066FC4 /* PRProjectTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A92E7D19E107A100066FC4 /* PRProjectTableDataSource.m */; };
+		E8A92E8319E10F4100066FC4 /* addButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A92E7F19E10F4100066FC4 /* addButton.png */; };
+		E8A92E8419E10F4100066FC4 /* addButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A92E8019E10F4100066FC4 /* addButton@2x.png */; };
+		E8A92E8519E10F4100066FC4 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A92E8119E10F4100066FC4 /* bg.png */; };
+		E8A92E8619E10F4100066FC4 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A92E8219E10F4100066FC4 /* bg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		E833099F19E0DD280035E6BA /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
 		E8A92E7C19E107A100066FC4 /* PRProjectTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRProjectTableDataSource.h; path = Projeect/PRProjectTableDataSource.h; sourceTree = "<group>"; };
 		E8A92E7D19E107A100066FC4 /* PRProjectTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRProjectTableDataSource.m; path = Projeect/PRProjectTableDataSource.m; sourceTree = "<group>"; };
+		E8A92E7F19E10F4100066FC4 /* addButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addButton.png; sourceTree = "<group>"; };
+		E8A92E8019E10F4100066FC4 /* addButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addButton@2x.png"; sourceTree = "<group>"; };
+		E8A92E8119E10F4100066FC4 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		E8A92E8219E10F4100066FC4 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,7 @@
 		E833090E19E06FDF0035E6BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E8A92E8719E10F4400066FC4 /* images */,
 				E833090F19E06FDF0035E6BA /* Info.plist */,
 				E833091019E06FDF0035E6BA /* main.m */,
 			);
@@ -148,6 +157,17 @@
 				E833099919E0DD270035E6BA /* Client.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		E8A92E8719E10F4400066FC4 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E8A92E7F19E10F4100066FC4 /* addButton.png */,
+				E8A92E8019E10F4100066FC4 /* addButton@2x.png */,
+				E8A92E8119E10F4100066FC4 /* bg.png */,
+				E8A92E8219E10F4100066FC4 /* bg@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +251,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E833091D19E06FDF0035E6BA /* Main.storyboard in Resources */,
+				E8A92E8319E10F4100066FC4 /* addButton.png in Resources */,
+				E8A92E8519E10F4100066FC4 /* bg.png in Resources */,
+				E8A92E8619E10F4100066FC4 /* bg@2x.png in Resources */,
 				E833092219E06FDF0035E6BA /* LaunchScreen.xib in Resources */,
 				E833091F19E06FDF0035E6BA /* Images.xcassets in Resources */,
+				E8A92E8419E10F4100066FC4 /* addButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

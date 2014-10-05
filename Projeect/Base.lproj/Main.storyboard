@@ -18,11 +18,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fKM-nH-oOY">
-                                <rect key="frame" x="0.0" y="-1" width="600" height="555"/>
+                                <rect key="frame" x="0.0" y="-1" width="600" height="601"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Oh-tl-3NG">
+                                <rect key="frame" x="0.0" y="552" width="640" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Wuv-pL-o5B"/>
+                                    <constraint firstAttribute="width" constant="640" id="wbh-gu-rek"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="640" id="wec-3g-KOq"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="xqg-Zq-dPS"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olJ-9h-wR7">
+                                <rect key="frame" x="270" y="535" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Wr3-7F-6FZ"/>
+                                    <constraint firstAttribute="height" constant="60" id="wCu-ym-8R4"/>
+                                </constraints>
+                                <state key="normal" image="addButton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNewTimeKeeper:" destination="Ukd-M1-4Eo" eventType="touchUpInside" id="hdd-hz-FmB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Oh-tl-3NG" firstAttribute="top" secondItem="olJ-9h-wR7" secondAttribute="bottom" constant="-43" id="3a0-Lf-NsO"/>
+                            <constraint firstItem="qqd-JA-y9D" firstAttribute="top" secondItem="1Oh-tl-3NG" secondAttribute="bottom" id="KdK-Sw-YFR"/>
+                            <constraint firstItem="olJ-9h-wR7" firstAttribute="centerX" secondItem="1Oh-tl-3NG" secondAttribute="centerX" constant="-20" id="ZtU-6P-aUh"/>
+                            <constraint firstItem="olJ-9h-wR7" firstAttribute="centerX" secondItem="OCC-LH-RbT" secondAttribute="centerX" id="loo-iY-S48"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nXY-jK-WPF">
                         <nil key="title"/>
@@ -53,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bii-pv-ecN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-722" y="-29"/>
+            <point key="canvasLocation" x="-723" y="-29"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5oo-eP-Jfo">
@@ -74,4 +102,8 @@
             <point key="canvasLocation" x="-1534" y="-29"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="addButton.png" width="120" height="120"/>
+        <image name="bg.png" width="640" height="93"/>
+    </resources>
 </document>
