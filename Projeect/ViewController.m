@@ -46,7 +46,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
+    return 70;
 }
 - (IBAction)addNewTimeKeeper:(id)sender {
     NSLog(@"Add new time");

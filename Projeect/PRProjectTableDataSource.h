@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "customTimeCellTableViewCell.h"
+
 @interface PRProjectTableDataSource : NSObject <UITableViewDataSource>
 
 -(void) registerTableView:(UITableView *)tableView;

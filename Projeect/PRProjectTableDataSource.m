@@ -11,12 +11,18 @@
 @implementation PRProjectTableDataSource
 
 -(void)registerTableView:(UITableView *)tableView {
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    //[tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+
+    UINib *nib = [UINib nibWithNibName:@"customTimeCellTableViewCell" bundle:nil];
+    [tableView registerNib:nib forCellReuseIdentifier:@"ItemCell"];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell.textLabel.text = @"Temp text";
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    //cell.textLabel.text = @"Temp text";
+    customTimeCellTableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:@"ItemCell"];
+    cell.projectNameLabel.text = @"Project name here";
+
     return cell;
 }
 
