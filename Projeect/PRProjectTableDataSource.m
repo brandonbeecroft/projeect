@@ -22,7 +22,7 @@
     //cell.textLabel.text = @"Temp text";
     customTimeCellTableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:@"ItemCell"];
     cell.projectNameLabel.text = @"Project name here";
-
+    
     return cell;
 }
 

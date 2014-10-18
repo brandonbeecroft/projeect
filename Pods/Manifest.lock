@@ -1,0 +1,10 @@
+PODS:
+  - INTUAnimationEngine (1.1.0)
+
+DEPENDENCIES:
+  - INTUAnimationEngine
+
+SPEC CHECKSUMS:
+  INTUAnimationEngine: 3f64f18fde02998d98a45b768cbd4c7741b3a39c
+
+COCOAPODS: 0.34.2

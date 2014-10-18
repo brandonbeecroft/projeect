@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C8A7356EDDF8F31AC81650D /* libPods-Projeect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A64EA0E85D8C2D7D3712B6 /* libPods-Projeect.a */; };
 		E833091119E06FDF0035E6BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E833091019E06FDF0035E6BA /* main.m */; };
 		E833091419E06FDF0035E6BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E833091319E06FDF0035E6BA /* AppDelegate.m */; };
 		E833091719E06FDF0035E6BA /* Projeect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E833091519E06FDF0035E6BA /* Projeect.xcdatamodeld */; };
@@ -25,6 +26,11 @@
 		E8A92E8419E10F4100066FC4 /* addButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A92E8019E10F4100066FC4 /* addButton@2x.png */; };
 		E8A92E8519E10F4100066FC4 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A92E8119E10F4100066FC4 /* bg.png */; };
 		E8A92E8619E10F4100066FC4 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A92E8219E10F4100066FC4 /* bg@2x.png */; };
+		E8E6A0A719E4AE6800615A80 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E6A0A619E4AE6800615A80 /* Stack.m */; };
+		E8E6A0AA19E4AF1900615A80 /* ProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E6A0A919E4AF1900615A80 /* ProjectController.m */; };
+		E8E6A0AD19E4AF2400615A80 /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E6A0AC19E4AF2400615A80 /* SessionController.m */; };
+		E8E6A0B219E4B58800615A80 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E6A0B119E4B58800615A80 /* Session.m */; };
+		E8E6A0B519E4B58900615A80 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E6A0B419E4B58900615A80 /* Project.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C59CC3D8B4FA09F8A03CC7A /* Pods-Projeect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Projeect/Pods-Projeect.debug.xcconfig"; sourceTree = "<group>"; };
+		9F7BE85BE5F70775FFF3070B /* Pods-Projeect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeect.release.xcconfig"; path = "Pods/Target Support Files/Pods-Projeect/Pods-Projeect.release.xcconfig"; sourceTree = "<group>"; };
+		B6A64EA0E85D8C2D7D3712B6 /* libPods-Projeect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Projeect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E833090B19E06FDF0035E6BA /* Projeect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projeect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E833090F19E06FDF0035E6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E833091019E06FDF0035E6BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,6 +76,16 @@
 		E8A92E8019E10F4100066FC4 /* addButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addButton@2x.png"; sourceTree = "<group>"; };
 		E8A92E8119E10F4100066FC4 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		E8A92E8219E10F4100066FC4 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		E8E6A0A519E4AE6800615A80 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		E8E6A0A619E4AE6800615A80 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		E8E6A0A819E4AF1900615A80 /* ProjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectController.h; sourceTree = "<group>"; };
+		E8E6A0A919E4AF1900615A80 /* ProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectController.m; sourceTree = "<group>"; };
+		E8E6A0AB19E4AF2400615A80 /* SessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionController.h; sourceTree = "<group>"; };
+		E8E6A0AC19E4AF2400615A80 /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionController.m; sourceTree = "<group>"; };
+		E8E6A0B019E4B58800615A80 /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		E8E6A0B119E4B58800615A80 /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		E8E6A0B319E4B58900615A80 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		E8E6A0B419E4B58900615A80 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8A7356EDDF8F31AC81650D /* libPods-Projeect.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,13 +107,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		439AE8A569C38D9BD1389B99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6A64EA0E85D8C2D7D3712B6 /* libPods-Projeect.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC2D9294CBA05BF4EFE0E6DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C59CC3D8B4FA09F8A03CC7A /* Pods-Projeect.debug.xcconfig */,
+				9F7BE85BE5F70775FFF3070B /* Pods-Projeect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E833090219E06FDF0035E6BA = {
 			isa = PBXGroup;
 			children = (
 				E833091B19E06FDF0035E6BA /* Main.storyboard */,
+				E833091519E06FDF0035E6BA /* Projeect.xcdatamodeld */,
 				E833090D19E06FDF0035E6BA /* Projeect */,
 				E833092A19E06FDF0035E6BA /* ProjeectTests */,
 				E833090C19E06FDF0035E6BA /* Products */,
+				CC2D9294CBA05BF4EFE0E6DE /* Pods */,
+				439AE8A569C38D9BD1389B99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,19 +149,11 @@
 		E833090D19E06FDF0035E6BA /* Projeect */ = {
 			isa = PBXGroup;
 			children = (
-				E87B6CE919E36E4B005AF98A /* pc */,
-				E833093A19E070180035E6BA /* Model */,
 				E833091219E06FDF0035E6BA /* AppDelegate.h */,
 				E833091319E06FDF0035E6BA /* AppDelegate.m */,
-				E833091819E06FDF0035E6BA /* ViewController.h */,
-				E833091919E06FDF0035E6BA /* ViewController.m */,
-				E87B6CF019E3940F005AF98A /* PREnterNewProjectViewController.h */,
-				E87B6CF119E3940F005AF98A /* PREnterNewProjectViewController.m */,
-				E87B6CF519E3A2EB005AF98A /* customTimeCellTableViewCell.h */,
-				E87B6CF619E3A2EB005AF98A /* customTimeCellTableViewCell.m */,
-				E87B6CF719E3A2EB005AF98A /* customTimeCellTableViewCell.xib */,
-				E833091E19E06FDF0035E6BA /* Images.xcassets */,
-				E833092019E06FDF0035E6BA /* LaunchScreen.xib */,
+				E8E6A0AF19E4AFE800615A80 /* Controllers */,
+				E8E6A0AE19E4AF2E00615A80 /* Views */,
+				E833093A19E070180035E6BA /* Model */,
 				E833090E19E06FDF0035E6BA /* Supporting Files */,
 			);
 			path = Projeect;
@@ -131,6 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				E8A92E8719E10F4400066FC4 /* images */,
+				E87B6CE919E36E4B005AF98A /* pc */,
+				E833091E19E06FDF0035E6BA /* Images.xcassets */,
+				E833092019E06FDF0035E6BA /* LaunchScreen.xib */,
 				E833090F19E06FDF0035E6BA /* Info.plist */,
 				E833091019E06FDF0035E6BA /* main.m */,
 			);
@@ -157,9 +192,14 @@
 		E833093A19E070180035E6BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E8E6A0B319E4B58900615A80 /* Project.h */,
+				E8E6A0B419E4B58900615A80 /* Project.m */,
+				E8E6A0B019E4B58800615A80 /* Session.h */,
+				E8E6A0B119E4B58800615A80 /* Session.m */,
+				E8E6A0A519E4AE6800615A80 /* Stack.h */,
+				E8E6A0A619E4AE6800615A80 /* Stack.m */,
 				E8A92E7C19E107A100066FC4 /* PRProjectTableDataSource.h */,
 				E8A92E7D19E107A100066FC4 /* PRProjectTableDataSource.m */,
-				E833091519E06FDF0035E6BA /* Projeect.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -186,6 +226,31 @@
 			name = images;
 			sourceTree = "<group>";
 		};
+		E8E6A0AE19E4AF2E00615A80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E87B6CF719E3A2EB005AF98A /* customTimeCellTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E8E6A0AF19E4AFE800615A80 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E833091819E06FDF0035E6BA /* ViewController.h */,
+				E833091919E06FDF0035E6BA /* ViewController.m */,
+				E87B6CF019E3940F005AF98A /* PREnterNewProjectViewController.h */,
+				E87B6CF119E3940F005AF98A /* PREnterNewProjectViewController.m */,
+				E87B6CF519E3A2EB005AF98A /* customTimeCellTableViewCell.h */,
+				E87B6CF619E3A2EB005AF98A /* customTimeCellTableViewCell.m */,
+				E8E6A0A819E4AF1900615A80 /* ProjectController.h */,
+				E8E6A0A919E4AF1900615A80 /* ProjectController.m */,
+				E8E6A0AB19E4AF2400615A80 /* SessionController.h */,
+				E8E6A0AC19E4AF2400615A80 /* SessionController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E833093119E06FDF0035E6BA /* Build configuration list for PBXNativeTarget "Projeect" */;
 			buildPhases = (
+				AB2C77C60603372CCE8E95D6 /* Check Pods Manifest.lock */,
 				E833090719E06FDF0035E6BA /* Sources */,
 				E833090819E06FDF0035E6BA /* Frameworks */,
 				E833090919E06FDF0035E6BA /* Resources */,
+				EF0E5FE9F9E3A1C6C6C56815 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -286,19 +353,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AB2C77C60603372CCE8E95D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF0E5FE9F9E3A1C6C6C56815 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Projeect/Pods-Projeect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E833090719E06FDF0035E6BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E6A0AA19E4AF1900615A80 /* ProjectController.m in Sources */,
 				E833091419E06FDF0035E6BA /* AppDelegate.m in Sources */,
 				E87B6CF819E3A2EB005AF98A /* customTimeCellTableViewCell.m in Sources */,
+				E8E6A0B219E4B58800615A80 /* Session.m in Sources */,
 				E8A92E7E19E107A100066FC4 /* PRProjectTableDataSource.m in Sources */,
+				E8E6A0B519E4B58900615A80 /* Project.m in Sources */,
 				E833091119E06FDF0035E6BA /* main.m in Sources */,
 				E833091A19E06FDF0035E6BA /* ViewController.m in Sources */,
 				E87B6CF219E3940F005AF98A /* PREnterNewProjectViewController.m in Sources */,
 				E87B6CEF19E37402005AF98A /* IconPack.m in Sources */,
 				E833091719E06FDF0035E6BA /* Projeect.xcdatamodeld in Sources */,
+				E8E6A0A719E4AE6800615A80 /* Stack.m in Sources */,
+				E8E6A0AD19E4AF2400615A80 /* SessionController.m in Sources */,
 				E87B6CEC19E36F5E005AF98A /* AddIconView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +525,7 @@
 		};
 		E833093219E06FDF0035E6BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C59CC3D8B4FA09F8A03CC7A /* Pods-Projeect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Projeect/Info.plist;
@@ -431,6 +537,7 @@
 		};
 		E833093319E06FDF0035E6BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F7BE85BE5F70775FFF3070B /* Pods-Projeect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Projeect/Info.plist;
@@ -513,7 +620,8 @@
 				E833091619E06FDF0035E6BA /* Projeect.xcdatamodel */,
 			);
 			currentVersion = E833091619E06FDF0035E6BA /* Projeect.xcdatamodel */;
-			path = Projeect.xcdatamodeld;
+			name = Projeect.xcdatamodeld;
+			path = Projeect/Projeect.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

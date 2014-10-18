@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    UIViewController *viewController = (UIViewController *)self.window.rootViewController;
+//    UIViewController *containerViewController = [[UIViewController alloc] initWithNibName:nil bundle:nil];
+//    [containerViewController addChildViewController:viewController];
+//    [containerViewController.view addSubview:viewController.view];
+//
+//    UIViewController *credits = [[PREnterNewProjectViewController alloc] initWithNibName:nil bundle:nil];
+//    [RCHBackboard setupWithName:@"bottom" container:containerViewController root:viewController backboard:credits orientation:RCHBackboardOrientationBottom width:350];
+//
+//    // We're done, lift the curtains and start the show!
+//    [_window setRootViewController:containerViewController];
     return YES;
 }
 

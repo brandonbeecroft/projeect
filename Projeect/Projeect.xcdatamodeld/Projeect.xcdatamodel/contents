@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Client" representedClassName="Client" syncable="YES">
-        <attribute name="clientName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="projects" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Project" inverseName="client" inverseEntity="Project" syncable="YES"/>
-    </entity>
     <entity name="Project" representedClassName="Project" syncable="YES">
+        <attribute name="clientName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="projectName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="projectNote" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="totalTimeWorked" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <relationship name="client" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Client" inverseName="projects" inverseEntity="Client" syncable="YES"/>
         <relationship name="sessions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Session" inverseName="project" inverseEntity="Session" syncable="YES"/>
     </entity>
     <entity name="Session" representedClassName="Session" syncable="YES">
-        <attribute name="sessionDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dayTotal" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="sessionEndTime" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="sessionStartTime" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="sessionTotalTime" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -20,7 +16,6 @@
     </entity>
     <elements>
         <element name="Project" positionX="-54" positionY="-9" width="128" height="118"/>
-        <element name="Client" positionX="-36" positionY="18" width="128" height="73"/>
         <element name="Session" positionX="-9" positionY="81" width="128" height="118"/>
     </elements>
 </model>
