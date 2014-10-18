@@ -5,6 +5,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'Projeect' do
 pod 'INTUAnimationEngine'
+pod 'Parse'
 end
 
 target 'ProjeectTests' do

@@ -6,9 +6,21 @@
 // project.
 
 
+// Bolts
+#define COCOAPODS_POD_AVAILABLE_Bolts
+#define COCOAPODS_VERSION_MAJOR_Bolts 1
+#define COCOAPODS_VERSION_MINOR_Bolts 1
+#define COCOAPODS_VERSION_PATCH_Bolts 3
+
 // INTUAnimationEngine
 #define COCOAPODS_POD_AVAILABLE_INTUAnimationEngine
 #define COCOAPODS_VERSION_MAJOR_INTUAnimationEngine 1
 #define COCOAPODS_VERSION_MINOR_INTUAnimationEngine 1
 #define COCOAPODS_VERSION_PATCH_INTUAnimationEngine 0
+
+// Parse
+#define COCOAPODS_POD_AVAILABLE_Parse
+#define COCOAPODS_VERSION_MAJOR_Parse 1
+#define COCOAPODS_VERSION_MINOR_Parse 4
+#define COCOAPODS_VERSION_PATCH_Parse 2
 

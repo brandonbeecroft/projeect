@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Awesometistic, LLC. All rights reserved.
 //
 
+#import <Parse/Parse.h>
 #import "AppDelegate.h"
 #import "ViewController.h"
 
@@ -28,6 +29,13 @@
 //
 //    // We're done, lift the curtains and start the show!
 //    [_window setRootViewController:containerViewController];
+
+    [Parse setApplicationId:@"vuXhVW5EHcvU3XAhpci4PdgFMS9HqVqup9kFA76Z"
+                  clientKey:@"WVGK9s7SdDTYSOivv51n157P5g9OVaDrPzhKFR7k"];
+
+    [PFUser enableAutomaticUser];
+    [[PFUser currentUser] saveInBackground];
+
     return YES;
 }
 
