@@ -22,6 +22,8 @@
 
 -(void)viewWillAppear:(BOOL)animated {
 
+    //[self refreshProjectList];
+
 }
 
 - (void)viewDidLoad {
@@ -30,10 +32,9 @@
 
     NSDate *today = [NSDate date];
     NSString *dateString = [NSDateFormatter localizedStringFromDate:today dateStyle:NSDateFormatterLongStyle timeStyle:NSDateFormatterNoStyle];
-    NSLog(@"Date string: %@",dateString);
-
+    
     self.mainTitleNavigationBar.text = dateString;
-    self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:61/255 green:62/255 blue:64/255 alpha:1];
 
     self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
@@ -43,7 +44,6 @@
     self.tableView.dataSource = self.dataSource;
     self.tableView.delegate = self;
 
-    //ViewController *rootController=(ViewController *)((AppDelegate *)[[UIApplication sharedApplication] delegate]).window.rootViewController;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -57,8 +57,10 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 70;
 }
+
 - (IBAction)addNewTimeKeeper:(id)sender {
     NSLog(@"Add new time");
 }
+
 
 @end

@@ -6,28 +6,51 @@
 //  Copyright (c) 2014 Awesometistic, LLC. All rights reserved.
 //
 
+
 #import "PRProjectTableDataSource.h"
+#import "ProjeectCustomTableCell.h"
 
 @implementation PRProjectTableDataSource
 
 -(void)registerTableView:(UITableView *)tableView {
-    //[tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-
-    UINib *nib = [UINib nibWithNibName:@"customTimeCellTableViewCell" bundle:nil];
-    [tableView registerNib:nib forCellReuseIdentifier:@"ItemCell"];
+    // ASK: it only works if the forCellReuseItentifier is is something different?
+    [tableView registerClass:[ProjeectCustomTableCell class] forCellReuseIdentifier:@"cell"];
+    [self queryProjectList:tableView];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    //cell.textLabel.text = @"Temp text";
-    customTimeCellTableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:@"ItemCell"];
-    cell.projectNameLabel.text = @"Project name here";
-    
+    ProjeectCustomTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProjectCell" forIndexPath:indexPath];
+
+    PFObject *project = [self.userProjects objectAtIndex:indexPath.row];
+
+    cell.projectName.text = [project objectForKey:@"projectName"];
+    cell.clientName.text = [project objectForKey:@"clientName"];
     return cell;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+
+    return self.userProjects.count;
+
+}
+
+-(void)queryProjectList:(UITableView *)tableView {
+
+    if ([PFUser currentUser].objectId == nil) {
+        NSLog(@"current user was nil");
+    } else {
+    PFQuery *query = [PFQuery queryWithClassName:@"Projects"];
+    [query whereKey:@"createdBy" equalTo:[PFUser currentUser]];
+
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // do something with objects?
+            NSLog(@"Object count: %li",objects.count);
+            self.userProjects = objects;
+            [tableView reloadData];
+        }
+    }];
+    }
 }
 
 @end

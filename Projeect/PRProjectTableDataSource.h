@@ -9,9 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import "customTimeCellTableViewCell.h"
+#import "ProjectController.h"
+
 
 @interface PRProjectTableDataSource : NSObject <UITableViewDataSource>
+
+@property (nonatomic, strong) NSArray *userProjects;
 
 -(void) registerTableView:(UITableView *)tableView;
 

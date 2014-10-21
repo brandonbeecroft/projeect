@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ViewController : UIViewController 
+@interface ViewController : UIViewController
+
+@property (nonatomic, strong) NSArray *userProjects;
 
 @end
 

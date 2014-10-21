@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C8A7356EDDF8F31AC81650D /* libPods-Projeect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A64EA0E85D8C2D7D3712B6 /* libPods-Projeect.a */; };
+		E81CEE4119F5B76C007DBB0B /* ProjeectCustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E81CEE4019F5B76C007DBB0B /* ProjeectCustomTableCell.m */; };
 		E833091119E06FDF0035E6BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E833091019E06FDF0035E6BA /* main.m */; };
 		E833091419E06FDF0035E6BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E833091319E06FDF0035E6BA /* AppDelegate.m */; };
 		E833091719E06FDF0035E6BA /* Projeect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E833091519E06FDF0035E6BA /* Projeect.xcdatamodeld */; };
@@ -19,8 +20,6 @@
 		E87B6CEC19E36F5E005AF98A /* AddIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = E87B6CEB19E36F5E005AF98A /* AddIconView.m */; };
 		E87B6CEF19E37402005AF98A /* IconPack.m in Sources */ = {isa = PBXBuildFile; fileRef = E87B6CEE19E37402005AF98A /* IconPack.m */; };
 		E87B6CF219E3940F005AF98A /* PREnterNewProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E87B6CF119E3940F005AF98A /* PREnterNewProjectViewController.m */; };
-		E87B6CF819E3A2EB005AF98A /* customTimeCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E87B6CF619E3A2EB005AF98A /* customTimeCellTableViewCell.m */; };
-		E87B6CF919E3A2EB005AF98A /* customTimeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87B6CF719E3A2EB005AF98A /* customTimeCellTableViewCell.xib */; };
 		E8A92E7E19E107A100066FC4 /* PRProjectTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A92E7D19E107A100066FC4 /* PRProjectTableDataSource.m */; };
 		E8A92E8319E10F4100066FC4 /* addButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A92E7F19E10F4100066FC4 /* addButton.png */; };
 		E8A92E8419E10F4100066FC4 /* addButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A92E8019E10F4100066FC4 /* addButton@2x.png */; };
@@ -28,9 +27,6 @@
 		E8A92E8619E10F4100066FC4 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A92E8219E10F4100066FC4 /* bg@2x.png */; };
 		E8E6A0A719E4AE6800615A80 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E6A0A619E4AE6800615A80 /* Stack.m */; };
 		E8E6A0AA19E4AF1900615A80 /* ProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E6A0A919E4AF1900615A80 /* ProjectController.m */; };
-		E8E6A0AD19E4AF2400615A80 /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E6A0AC19E4AF2400615A80 /* SessionController.m */; };
-		E8E6A0B219E4B58800615A80 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E6A0B119E4B58800615A80 /* Session.m */; };
-		E8E6A0B519E4B58900615A80 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E6A0B419E4B58900615A80 /* Project.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +43,8 @@
 		3C59CC3D8B4FA09F8A03CC7A /* Pods-Projeect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Projeect/Pods-Projeect.debug.xcconfig"; sourceTree = "<group>"; };
 		9F7BE85BE5F70775FFF3070B /* Pods-Projeect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeect.release.xcconfig"; path = "Pods/Target Support Files/Pods-Projeect/Pods-Projeect.release.xcconfig"; sourceTree = "<group>"; };
 		B6A64EA0E85D8C2D7D3712B6 /* libPods-Projeect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Projeect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81CEE3F19F5B76C007DBB0B /* ProjeectCustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjeectCustomTableCell.h; sourceTree = "<group>"; };
+		E81CEE4019F5B76C007DBB0B /* ProjeectCustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjeectCustomTableCell.m; sourceTree = "<group>"; };
 		E833090B19E06FDF0035E6BA /* Projeect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projeect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E833090F19E06FDF0035E6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E833091019E06FDF0035E6BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,9 +65,6 @@
 		E87B6CEE19E37402005AF98A /* IconPack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconPack.m; sourceTree = "<group>"; };
 		E87B6CF019E3940F005AF98A /* PREnterNewProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PREnterNewProjectViewController.h; path = ../PREnterNewProjectViewController.h; sourceTree = "<group>"; };
 		E87B6CF119E3940F005AF98A /* PREnterNewProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PREnterNewProjectViewController.m; path = ../PREnterNewProjectViewController.m; sourceTree = "<group>"; };
-		E87B6CF519E3A2EB005AF98A /* customTimeCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customTimeCellTableViewCell.h; sourceTree = "<group>"; };
-		E87B6CF619E3A2EB005AF98A /* customTimeCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customTimeCellTableViewCell.m; sourceTree = "<group>"; };
-		E87B6CF719E3A2EB005AF98A /* customTimeCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customTimeCellTableViewCell.xib; sourceTree = "<group>"; };
 		E8A92E7C19E107A100066FC4 /* PRProjectTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRProjectTableDataSource.h; sourceTree = "<group>"; };
 		E8A92E7D19E107A100066FC4 /* PRProjectTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRProjectTableDataSource.m; sourceTree = "<group>"; };
 		E8A92E7F19E10F4100066FC4 /* addButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addButton.png; sourceTree = "<group>"; };
@@ -80,12 +75,6 @@
 		E8E6A0A619E4AE6800615A80 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 		E8E6A0A819E4AF1900615A80 /* ProjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectController.h; sourceTree = "<group>"; };
 		E8E6A0A919E4AF1900615A80 /* ProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectController.m; sourceTree = "<group>"; };
-		E8E6A0AB19E4AF2400615A80 /* SessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionController.h; sourceTree = "<group>"; };
-		E8E6A0AC19E4AF2400615A80 /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionController.m; sourceTree = "<group>"; };
-		E8E6A0B019E4B58800615A80 /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
-		E8E6A0B119E4B58800615A80 /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
-		E8E6A0B319E4B58900615A80 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
-		E8E6A0B419E4B58900615A80 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +116,6 @@
 		E833090219E06FDF0035E6BA = {
 			isa = PBXGroup;
 			children = (
-				E833091B19E06FDF0035E6BA /* Main.storyboard */,
 				E833091519E06FDF0035E6BA /* Projeect.xcdatamodeld */,
 				E833090D19E06FDF0035E6BA /* Projeect */,
 				E833092A19E06FDF0035E6BA /* ProjeectTests */,
@@ -192,10 +180,6 @@
 		E833093A19E070180035E6BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E8E6A0B319E4B58900615A80 /* Project.h */,
-				E8E6A0B419E4B58900615A80 /* Project.m */,
-				E8E6A0B019E4B58800615A80 /* Session.h */,
-				E8E6A0B119E4B58800615A80 /* Session.m */,
 				E8E6A0A519E4AE6800615A80 /* Stack.h */,
 				E8E6A0A619E4AE6800615A80 /* Stack.m */,
 				E8A92E7C19E107A100066FC4 /* PRProjectTableDataSource.h */,
@@ -229,7 +213,9 @@
 		E8E6A0AE19E4AF2E00615A80 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E87B6CF719E3A2EB005AF98A /* customTimeCellTableViewCell.xib */,
+				E833091B19E06FDF0035E6BA /* Main.storyboard */,
+				E81CEE3F19F5B76C007DBB0B /* ProjeectCustomTableCell.h */,
+				E81CEE4019F5B76C007DBB0B /* ProjeectCustomTableCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -241,12 +227,8 @@
 				E833091919E06FDF0035E6BA /* ViewController.m */,
 				E87B6CF019E3940F005AF98A /* PREnterNewProjectViewController.h */,
 				E87B6CF119E3940F005AF98A /* PREnterNewProjectViewController.m */,
-				E87B6CF519E3A2EB005AF98A /* customTimeCellTableViewCell.h */,
-				E87B6CF619E3A2EB005AF98A /* customTimeCellTableViewCell.m */,
 				E8E6A0A819E4AF1900615A80 /* ProjectController.h */,
 				E8E6A0A919E4AF1900615A80 /* ProjectController.m */,
-				E8E6A0AB19E4AF2400615A80 /* SessionController.h */,
-				E8E6A0AC19E4AF2400615A80 /* SessionController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -339,7 +321,6 @@
 				E8A92E8519E10F4100066FC4 /* bg.png in Resources */,
 				E8A92E8619E10F4100066FC4 /* bg@2x.png in Resources */,
 				E833092219E06FDF0035E6BA /* LaunchScreen.xib in Resources */,
-				E87B6CF919E3A2EB005AF98A /* customTimeCellTableViewCell.xib in Resources */,
 				E833091F19E06FDF0035E6BA /* Images.xcassets in Resources */,
 				E8A92E8419E10F4100066FC4 /* addButton@2x.png in Resources */,
 			);
@@ -394,17 +375,14 @@
 			files = (
 				E8E6A0AA19E4AF1900615A80 /* ProjectController.m in Sources */,
 				E833091419E06FDF0035E6BA /* AppDelegate.m in Sources */,
-				E87B6CF819E3A2EB005AF98A /* customTimeCellTableViewCell.m in Sources */,
-				E8E6A0B219E4B58800615A80 /* Session.m in Sources */,
 				E8A92E7E19E107A100066FC4 /* PRProjectTableDataSource.m in Sources */,
-				E8E6A0B519E4B58900615A80 /* Project.m in Sources */,
 				E833091119E06FDF0035E6BA /* main.m in Sources */,
 				E833091A19E06FDF0035E6BA /* ViewController.m in Sources */,
 				E87B6CF219E3940F005AF98A /* PREnterNewProjectViewController.m in Sources */,
 				E87B6CEF19E37402005AF98A /* IconPack.m in Sources */,
 				E833091719E06FDF0035E6BA /* Projeect.xcdatamodeld in Sources */,
+				E81CEE4119F5B76C007DBB0B /* ProjeectCustomTableCell.m in Sources */,
 				E8E6A0A719E4AE6800615A80 /* Stack.m in Sources */,
-				E8E6A0AD19E4AF2400615A80 /* SessionController.m in Sources */,
 				E87B6CEC19E36F5E005AF98A /* AddIconView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +412,6 @@
 				E833091C19E06FDF0035E6BA /* Base */,
 			);
 			name = Main.storyboard;
-			path = Projeect;
 			sourceTree = "<group>";
 		};
 		E833092019E06FDF0035E6BA /* LaunchScreen.xib */ = {

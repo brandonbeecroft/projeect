@@ -10,4 +10,8 @@
 
 @interface PREnterNewProjectViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *projectName;
+@property (weak, nonatomic) IBOutlet UITextField *clientName;
+@property (weak, nonatomic) IBOutlet UITextField *projectNotes;
+
 @end

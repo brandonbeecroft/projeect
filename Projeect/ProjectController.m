@@ -7,7 +7,12 @@
 //
 
 #import "ProjectController.h"
-#import "Project.h"
+
+@interface ProjectController ()
+
+@property (nonatomic, strong) NSArray *userProjects;
+
+@end
 
 @implementation ProjectController
 
@@ -20,31 +25,52 @@
     return sharedInstance;
 }
 
--(NSArray *)projects{
+- (NSArray *)projects{
 
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Project"];
-
-    NSArray *arrayOfProjects = [[Stack sharedInstance].managedObjectContext executeFetchRequest:request error:nil];
-    return arrayOfProjects;
+    
+    //NSLog(@"project desc: %@", self.userProjects.description);
+    return self.userProjects;
 }
 
 -(void)addNewProject:(NSString *)projectName forClient:(NSString *)clientName withProjectNote:(NSString *)projectNote {
 
-    // new project instance
-    Project *project = [NSEntityDescription insertNewObjectForEntityForName:@"Project" inManagedObjectContext:[Stack sharedInstance].managedObjectContext];
-    
-    // assign the project attributes
-    project.projectName = projectName;
-    project.clientName = clientName;
-    project.projectNote = projectNote;
+    PFObject *newProject = [PFObject objectWithClassName:@"Projects"];
+    [newProject setObject:[PFUser currentUser] forKey:@"createdBy"];
+    newProject[@"projectName"] = projectName;
+    newProject[@"clientName"] = clientName;
+    newProject[@"projectNote"] = projectNote;
 
-    // call a sync method
-    [self sync];
+    [newProject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            PFRelation *relation = [[PFUser currentUser] relationForKey:@"usersProjects"];
+            [relation addObject:newProject];
+            [newProject saveEventually];
+        }
+    }];
 }
 
 -(void)sync{
     // save the managedObjectContext
-    [[Stack sharedInstance].managedObjectContext save:nil];
+    //[[Stack sharedInstance].managedObjectContext save:nil];
 }
+
+
+//    // objects representing new projects
+//    PFObject *newProject = [PFObject objectWithClassName:@"Projects"];
+//
+//    // assign to the the user the new object
+//    [newProject setObject:[PFUser currentUser] forKey:@"createdBy"];
+//
+//    // give the object a attribute
+//    newProject[@"projectName"] = @"Projeect App Test";
+//
+//    [newProject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//        if (succeeded) {
+//            PFRelation *relation = [[PFUser currentUser] relationForKey:@"userprojects"];
+//            [relation addObject:newProject];
+//            [newProject saveEventually];
+//        }
+//    }];
+
 
 @end

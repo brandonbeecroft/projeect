@@ -1,14 +1,14 @@
 //
-//  customTimeCellTableViewCell.m
+//  ProjeectCustomTableCell.m
 //  Projeect
 //
-//  Created by Brandon Beecroft on 10/6/14.
+//  Created by Brandon Beecroft on 10/20/14.
 //  Copyright (c) 2014 Awesometistic, LLC. All rights reserved.
 //
 
-#import "customTimeCellTableViewCell.h"
+#import "ProjeectCustomTableCell.h"
 
-@implementation customTimeCellTableViewCell
+@implementation ProjeectCustomTableCell
 
 - (void)awakeFromNib {
     // Initialization code

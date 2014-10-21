@@ -18,24 +18,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-//    UIViewController *viewController = (UIViewController *)self.window.rootViewController;
-//    UIViewController *containerViewController = [[UIViewController alloc] initWithNibName:nil bundle:nil];
-//    [containerViewController addChildViewController:viewController];
-//    [containerViewController.view addSubview:viewController.view];
-//
-//    UIViewController *credits = [[PREnterNewProjectViewController alloc] initWithNibName:nil bundle:nil];
-//    [RCHBackboard setupWithName:@"bottom" container:containerViewController root:viewController backboard:credits orientation:RCHBackboardOrientationBottom width:350];
-//
-//    // We're done, lift the curtains and start the show!
-//    [_window setRootViewController:containerViewController];
-
+    
     [Parse setApplicationId:@"vuXhVW5EHcvU3XAhpci4PdgFMS9HqVqup9kFA76Z"
                   clientKey:@"WVGK9s7SdDTYSOivv51n157P5g9OVaDrPzhKFR7k"];
 
-    [PFUser enableAutomaticUser];
-    [[PFUser currentUser] saveInBackground];
-
+    if ([PFUser currentUser].objectId == nil) {
+        [PFUser enableAutomaticUser];
+        [[PFUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (succeeded) {
+                NSLog(@"User has logged in");
+            }
+        }];
+    }
     return YES;
 }
 
